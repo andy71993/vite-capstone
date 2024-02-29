@@ -1,0 +1,250 @@
+:root{
+  --clr-primary-600:hsl(161, 13%, 33%) ;
+  --clr-primary-500: hsl(50, 91%, 52%);
+  --clr-primary-900: hsl(0, 0%, 20%);
+  --clr-secondary-400: hsl(19, 78%, 69%);
+  --clr-secondary-200: hsl(29, 89%, 86%);
+  --clr-secondary-100: hsl(180, 4%, 96%);
+
+  --ff-primary: "Karla", sans-serif;
+  --ff-secondary: "Markazi Text", serif;
+
+  --fw-primary-bold: 700;
+  --fw-primary-semi-bold: 600;
+  --fw-primary-medium: 500;
+  --fw-primary-regular: 400;
+
+  --fw-secondary-medium: 500;
+  --fw-secondary-regular: 400;
+
+  --fs-primary-500: 1rem;
+  --fs-primary-600: 1.25rem;
+  --fs-primary-700: 1.125rem;
+
+  --fs-secondary-700: 4rem;
+  --fs-secondary-400: 2.5rem;
+
+  --fs-nav: var(--fs-primary-500);
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html,
+body{
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary-500);
+}
+
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* utility classes */
+
+.ff-primary{font-family: var(--ff-primary);}
+
+.ff-secondary{font-family: var(--ff-secondary)}
+
+.text-clr-primary-600{color: var(--clr-primary-600);}
+
+.bg-clr-primary-600{background-color: var(--clr-primary-600);}
+
+.bg-clr-primary-500{background-color: var(--clr-primary-500);}
+
+.bg-clr-secondary-100{background-color: var(--clr-secondary-100);}
+
+.text-clr-primary-900{color: var(--clr-primary-900);}
+
+.text-clr-primary-500{color: var(--clr-primary-500);}
+
+.text-clr-primary-0{color: #FFFFFF;}
+
+.text-clr-secondary-400{color: var(--clr-secondary-400);}
+
+.fw-primary-regular{font-weight: var(--fw-primary-regular);}
+
+.fw-primary-medium{font-weight: var(--fw-primary-medium);}
+
+.fw-primary-bold{font-weight: var(--fw-primary-bold);}
+
+.fw-primary-semi-bold{font-weight: var(--fw-primary-semi-bold);}
+
+.fw-secondary-medium{font-weight: var(--fw-secondary-medium);}
+
+.fw-secondary-regular{font-weight: var(--fw-secondary-medium);}
+
+.fs-primary-500{font-size: var(--fs-primary-500);}
+
+.fs-primary-600{font-size: var(--fs-primary-600);}
+
+.fs-primary-700{font-size: var(--fs-primary-700);}
+
+.fs-secondary-700{font-size: var(--fs-secondary-700);}
+
+.fs-secondary-400{font-size: var(--fs-secondary-400);}
+
+.button{
+  padding: 0.3rem 0;
+  padding-inline: 1rem;
+  border-radius: 1rem;
+  border: none;
+  color: var(--clr-primary-900);
+}
+
+.container{
+  --max-width: 960px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+/*
+.imgMax{
+  --max-width: 200px;
+  width: min(var(--max-width), 100%)
+} */
+
+/* .even-column{
+  display: grid;
+  gap: 1rem;
+} */
+
+/* @media(min-width: 50em){
+  .even-column{
+    grid-auto-flow: column;
+  }
+
+} */
+/* general styling */
+
+
+/*
+.testimony{
+  background-color:antiquewhite;
+  border-radius: 1rem 1rem 0 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+} */
+
+/* .testimony img{
+  --max-width: 100px;
+  --max-height: 100px;
+  width: min(var(--max-width), 100%);
+  height: min(var(--max-height),100%);
+  margin-inline: auto;
+  border-radius: 50%;
+  position: relative;
+  top: -2rem;
+}
+
+ */
+
+ /* .container{
+  --max-width: 960px;
+  width: min(var(--max-width), 100%);
+  padding-inline: 1rem;
+  margin-inline: auto;
+ } */
+
+ /* .card-cont img{
+  --max-width: 300px;
+  width: 100%;
+  max-height: 214px;
+  border-radius: 1rem;
+} */
+
+/* .card{
+  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem;
+} */
+
+/* .card header .title-price{
+  display: flex ;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+
+} */
+/* .card p{
+  padding-top: 0.5rem;
+  color: var(--clr-secondary-100);
+} */
+/* #price{color: var(--clr-secondary-400);}
+
+#delivery{
+  color: unset;
+}
+
+.card footer{
+  display: flex;
+  justify-content: space-between;
+} */
+
+ @media (min-width: 50em) {
+  .even-column{
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+ }

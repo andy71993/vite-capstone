@@ -1,0 +1,39 @@
+
+@media(min-width: 50em){
+
+  /* header */
+  /* .main-header{
+    margin-top: 1.5rem;
+  } */
+  /* .main-header .even-column{
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  /* .logo{
+    height: 3rem;
+  }
+  .navbar{
+    margin-top: 0.9rem;
+  }
+  .navbar ul{
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar li{
+    margin-inline: 1rem;
+  }
+  .navbar ul :last-child{
+    margin-right: unset;
+  }
+
+  .navbar ul :first-child{
+    margin-left: unset;
+  }
+  .navbar a{
+    text-decoration: none;
+  } */
+
+  /* hedaer end */
+}
